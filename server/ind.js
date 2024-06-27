@@ -1,0 +1,22 @@
+const { secp256k1 } =require("ethereum-cryptography/secp256k1")
+const {toHex}=require("ethereum-cryptography/utils")
+// const privateKey=toHex(secp256k1.utils.randomPrivateKey())
+const publicKey=toHex(secp256k1.getPublicKey("438b7d016be9a3355f871bbded9c099133ca3627fecc967c04cc50a46f5029af"))
+// console.log(privateKey)
+console.log(publicKey)
+
+
+
+
+// "0c4d263b5d4ba96d937f6ce3cf57bf3a8b5aea87bd7f6bd8609588098e704b75": 100,
+//   "74639037fa8277e0b7bf0e19f511cca940f83fcc448790a7ec4c379ea5b3bd39": 50,
+//   "9f6e547875941ba9926fa2c83b746ce23d9573944d548b035e01497e58ccf72d": 75,
+//   "9e2d18d6ed645c20f4689b822dd8d7c08af18069a207b57017a432e1978d78bf":85,
+//   "9154411bfb127515153c7f7da731c775c1f90704e9581f9958828b42a688666a":99,
+
+
+// 031e6371797c478e4cbdeff350129f4e5562939661017fc00cd4543eb80fb41a6b
+// 02cb938829c8997922b3d43c8ae80339daaa1df95d480aea64c222ee32536e13dd
+// 02f8abe5f88d51335a1d1a0f87efc3871a89366af6d95ed39aae1cdde52108ed9b
+// 02eba8d9c6993fb9d509d5a0178db3adbd9c4f94fe4a00788e68a570727e459bb4
+// 024551852861a6dbcbde5ec8ca17f9b83a862d71ed5750081c374fd4f4c7d041d0
